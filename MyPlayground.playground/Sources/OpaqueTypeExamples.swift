@@ -1,5 +1,3 @@
-import Foundation
-
 protocol Animal {
     func makeSound()
 }

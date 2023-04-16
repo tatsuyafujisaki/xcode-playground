@@ -1,5 +1,3 @@
-import Foundation
-
 public func forLoopExample() {
     for i in 0 ..< 3 {
         print(i)
