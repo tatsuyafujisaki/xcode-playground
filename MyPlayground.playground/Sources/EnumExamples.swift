@@ -7,16 +7,30 @@ enum Season {
     case winter
 }
 
-enum CardinalDirection: Int {
-    case north
-    case east
-    case south
-    case west
+enum SeasonWithInt: Int {
+    case spring
+    case summer
+    case autumn
+    case winter
+}
+
+enum SeasonWithString: String {
+    case spring = "spring!"
+    case summer = "summer!"
+    case autumn = "autumn!"
+    case winter = "winter!"
+}
+
+enum SeasonWithCustomString: String {
+    case spring = "spring!"
+    case summer = "summer!"
+    case autumn = "autumn!"
+    case winter = "winter!"
 }
 
 public func enumExamples() {
-    print(CardinalDirection.south)
-    print(CardinalDirection.south.rawValue)
-    print(Season.autumn)
-    print(Season.autumn.rawValue)
+    print(Season.autumn) // autumn
+    print(SeasonWithInt.autumn.rawValue) // 2
+    print(SeasonWithString.autumn.rawValue) // autumn
+    print(SeasonWithCustomString.autumn.rawValue) // autumn!
 }
