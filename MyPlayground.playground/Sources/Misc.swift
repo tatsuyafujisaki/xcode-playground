@@ -1,5 +1,3 @@
-public func myFunction() {
-    print("Hello")
+public func greet() {
+    print("Hello!")
 }
-
-public let myVariable = "Hello"
