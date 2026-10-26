@@ -1,5 +1,3 @@
-import Foundation
-
 enum Season {
     case spring
     case summer
@@ -15,10 +13,10 @@ enum SeasonWithInt: Int {
 }
 
 enum SeasonWithString: String {
-    case spring = "spring!"
-    case summer = "summer!"
-    case autumn = "autumn!"
-    case winter = "winter!"
+    case spring
+    case summer
+    case autumn
+    case winter
 }
 
 enum SeasonWithCustomString: String {
@@ -36,9 +34,9 @@ enum Abc {
 
 func printAbc(abc: Abc) {
     switch abc {
-    case .a(let a1, let a2):
+    case let .a(a1, a2):
         print(a1 + a2)
-    case .b(let s1, let s2):
+    case let .b(s1, s2):
         print(s1 + s2)
     case .c:
         print("c is called.")
@@ -57,7 +55,7 @@ public func enumWithAssociatedValueExamples() {
     let b = Abc.b("Hello", "World")
     let c = Abc.c
 
-    printAbc(abc: a) // 579
+    printAbc(abc: a) // 46
     printAbc(abc: b) // HelloWorld
     printAbc(abc: c) // c is called.
 }
