@@ -14,22 +14,10 @@ struct Cat: Animal {
     }
 }
 
-struct AnimalSound {
-    private var animal: Animal
-
-    init(_ animal: Animal) {
-        self.animal = animal
-    }
-
-    func makeSound() {
-        animal.makeSound()
-    }
-}
-
-func makeRandomAnimalSound() -> AnimalSound {
-    return AnimalSound(Int.random(in: 1 ... 2) == 1 ? Dog() : Cat())
+func makeRandomAnimal() -> any Animal {
+    Bool.random() ? Dog() : Cat()
 }
 
 public func opaqueTypeExample() {
-    makeRandomAnimalSound().makeSound() // prints "Woof!" or "Meow!" depending on the random number generated.
+    makeRandomAnimal().makeSound() // prints "Woof!" or "Meow!" depending on the random number generated.
 }
