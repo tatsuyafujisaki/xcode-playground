@@ -1,1 +1,6 @@
-greet()
+enumExamples()
+enumWithAssociatedValueExamples()
+failableInitializerExamples()
+forLoopExample()
+converterExamples()
+opaqueTypeExample()
