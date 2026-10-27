@@ -43,14 +43,14 @@ func printAbc(abc: Abc) {
     }
 }
 
-public func enumExamples() {
+public func enumExample() {
     print(Season.autumn) // autumn
     print(SeasonWithInt.autumn.rawValue) // 2
     print(SeasonWithString.autumn.rawValue) // autumn
     print(SeasonWithCustomString.autumn.rawValue) // autumn!
 }
 
-public func enumWithAssociatedValueExamples() {
+public func enumWithAssociatedValueExample() {
     let a = Abc.a(12, 34)
     let b = Abc.b("Hello", "World")
     let c = Abc.c

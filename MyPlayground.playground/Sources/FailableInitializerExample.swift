@@ -6,7 +6,7 @@ struct Person {
     }
 }
 
-public func failableInitializerExamples() {
+public func failableInitializerExample() {
     let person1 = Person(name: "Jane") // Person(name: "Jane")
     let person2 = Person(name: "") // nil
 
