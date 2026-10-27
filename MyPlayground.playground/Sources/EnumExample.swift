@@ -1,4 +1,4 @@
-enum Season {
+enum Season: CaseIterable {
     case spring
     case summer
     case autumn
@@ -45,6 +45,7 @@ func printAbc(abc: Abc) {
 
 public func enumExample() {
     print(Season.autumn) // autumn
+    print(Season.allCases) // [Season.spring, Season.summer, Season.autumn, Season.winter]
     print(SeasonWithInt.autumn.rawValue) // 2
     print(SeasonWithString.autumn.rawValue) // autumn
     print(SeasonWithCustomString.autumn.rawValue) // autumn!
